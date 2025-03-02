@@ -145,3 +145,14 @@ export class PasswordlessAuth {
 
 export * from './types';
 export { generateSecureToken, isValidEmail } from './utils';
+export { AuthError, AuthErrorCode, createAuthError } from './errors';
+export { SessionManager, SessionData, SessionConfig } from './session';
+export { RateLimiter, AuthRateLimiters, RateLimitConfig } from './rate-limiter';
+export { TokenBlacklist, BlacklistedToken, BlacklistConfig } from './blacklist';
+export { AuthLogger, LogLevel, LogEntry, defaultLogger } from './logger';
+export { 
+  ExpressAuthMiddleware, 
+  createAuthMiddleware, 
+  createDefaultAuthMiddleware,
+  MiddlewareConfig 
+} from './express-middleware';
